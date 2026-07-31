@@ -1,6 +1,6 @@
 // app/page.tsx  →  route: /  (replace your existing home page with this)
 import Link from "next/link";
-import { ShiftLights, Eyebrow, PhotoSlot, SpecStrip, Bullets, ToolTags } from "./components/ui";
+import { ShiftLights, Eyebrow, PhotoSlot, SpecStrip, Bullets, ToolTags } from "@/app/components/ui";
 
 export const metadata = {
   title: "Elijah Akpan — Mechanical Engineer",
@@ -17,7 +17,6 @@ const experience = [
     role: "Mechanical Engineering Intern",
     points: [
       "Developed and optimized manufacturing processes for components used in 20,000+ hp aerospace engines.",
-      "Programmed complex MasterCAM toolpaths and built Vericut machine templates to cut production errors.",
     ],
   },
   {
@@ -27,8 +26,7 @@ const experience = [
     dates: "Aug 2025 – Dec 2025",
     role: "Mechanical Engineering Intern",
     points: [
-      "Designed RF components and PCBs for fighter jets, using thermal FEA on a 3 dB hybrid coupler.",
-      "Built a MATLAB defect-detection GUI that saved engineers 100+ hours of quality work.",
+      "Designed RF components and PCBs for fighter jets",
     ],
   },
   {
@@ -38,8 +36,7 @@ const experience = [
     dates: "Oct 2024 – Present",
     role: "Autonomous Vehicle Researcher",
     points: [
-      "Led a vehicle-simulation cave build that helped secure a $65,000 grant.",
-      "Upgraded a $100,000 UGV: suspension, DC-motor brackets, and LiFePO4 battery cage.",
+      "Design and manufacture components for an autonomous vehicle laboratory that specializes in off-road vehicles.",
     ],
   },
   {
@@ -90,7 +87,7 @@ export default function Page() {
             ))}
           </div>
           <a
-            href="/resume.pdf"
+            href="/Resume V2.pdf"
             className="rounded-md border border-zinc-700 px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-zinc-200 transition-colors hover:border-[#ff5a1f] hover:text-[#ff5a1f]"
           >
             Résumé
@@ -100,19 +97,14 @@ export default function Page() {
 
       {/* HERO */}
       <section id="top" className="mx-auto max-w-5xl px-6 pb-20 pt-20 md:pt-28">
-        <div className="grid items-center gap-12 md:grid-cols-[1.4fr_1fr]">
+        <div className="grid items-center gap-50 md:grid-cols-[1.4fr_1fr]">
           <div>
-            <Eyebrow>Mechanical Engineer · Worcester, MA</Eyebrow>
-            <h1 className="text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
-              Elijah
-              <br />
-              Akpan
+            <Eyebrow> </Eyebrow>
+            <h1 className="text-5xl font-semibold leading-[0.95] tracking-tight md:text-5xl">
+              Elijah Akpan
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-zinc-400">
-              I build high-performance machines — from CNC-manufactured components for{" "}
-              <span className="text-zinc-200">20,000+ hp aerospace engines</span> to a{" "}
-              <span className="text-zinc-200">230 hp electric race car</span>. B.S./M.S. in
-              Mechanical Engineering at WPI.
+              <span className="text-zinc-200">'28 B.S./M.S. in Mechanical Engineering at WPI.</span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3 font-mono text-xs">
               <a
@@ -145,8 +137,8 @@ export default function Page() {
           <SpecStrip
             items={[
               ["GPA", "3.6"],
-              ["FSAE Power", "230 hp"],
-              ["HV Pack", "400 V"],
+              ["Patent Applications", "2"],
+              ["Awards", "4"],
               ["Grad Year", "2028"],
             ]}
           />
@@ -198,19 +190,18 @@ export default function Page() {
       {/* MOTORSPORT / FSAE FEATURE */}
       <section id="motorsport" className="border-t border-zinc-800/60 py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <Eyebrow>Motorsport · Performance Lead</Eyebrow>
+          <Eyebrow>Performance Lead</Eyebrow>
           <div className="grid gap-10 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">WPI Formula SAE</h2>
               <p className="mt-4 text-zinc-400">
-                Leading the development of a 230 hp electric FSAE race car — optimizing the
-                powertrain and vehicle dynamics through CAE, CAD, and CNC machining.
+                See my experience of creating an award winning 230 hp electric FSAE race car.
               </p>
               <Link
                 href="/fsae"
                 className="mt-6 inline-block font-mono text-xs uppercase tracking-widest text-[#ff5a1f] transition-opacity hover:opacity-70"
               >
-                View project →
+                View Experience →
               </Link>
             </div>
             {/* PHOTO SLOT — the car. Add /public/fsae.jpg and swap for an <img>. */}
