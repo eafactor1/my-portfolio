@@ -204,7 +204,7 @@ export default function Page() {
               </Link>
             </div>
             {/* PHOTO SLOT — the car. Add /public/fsae.jpg and swap for an <img>. */}
-          <img src="FSAECAR.jpg" alt="FSAE" className="aspect-[4/3] w-full rounded-lg object-contain" />
+          <img src="fsaecar.jpg" alt="FSAE" className="aspect-[4/3] w-full rounded-lg object-contain" />
           </div>
         </div>
       </section>
