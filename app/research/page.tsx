@@ -62,11 +62,13 @@ export default function Page() {
       </Block>
 
       <Block title="AVMI Off-road Simulator">
-        <video
-          src="ugv.mkv"
-          autoPlay muted loop playsInline
-          className="aspect-[13/9] w-full rounded-lg border border-zinc-800 object-cover"
-          />
+      <iframe
+        src="https://www.youtube.com/embed/j62PwE_A74I"
+        title="AVMI SIM"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="aspect-video w-full rounded-lg border border-zinc-800"
+      />
       </Block>
     </CaseStudyLayout>
   );

@@ -41,11 +41,14 @@ export default function Page() {
             ]}
           />
           {/* PHOTO SLOT — the product / rig / demo. Add /public/engine-sim.jpg and swap for an <img>. */}
-          <video
-            src="rideoncar.mov"
-            controls
-            className="aspect-[4/3] w-full rounded-lg border border-zinc-800 object-cover"
-          />        </div>
+          <iframe
+          src="https://www.youtube.com/embed/qTBd-AJKarw"
+          title="Ride On Car"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="aspect-video w-full rounded-lg border border-zinc-800"
+          />        
+          </div>
       </Block>
 
       <Block title="Want to see more?">

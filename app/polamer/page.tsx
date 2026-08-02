@@ -37,10 +37,12 @@ export default function Page() {
               "8 Machines Done: Doosan PUMA V550 L/R, Hyundai LV800R, Hyundai LV1100R, Doosan Puma VTR 1216, Doosan Puma VTS 1214, Mazak Megaturn 900, and the Mazak Megaturn 1600",
             ]}
           />
-          <video
-          src="VTS1214.mp4"
-          autoPlay muted loop playsInline
-          className="aspect-[4/4] w-full rounded-lg border border-zinc-800 object-cover"
+          <iframe
+          src="https://www.youtube.com/embed/zOzxPvPffyo"
+          title="VTS1214 Vericut simulation"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="aspect-video w-full rounded-lg border border-zinc-800"
           />
         </div>
       </Block>
