@@ -26,17 +26,19 @@ export default function Page() {
         />
       </div>
 
-      <Block title="Thermal FEA Simulations">
+      <Block title="Thermal Simulations">
         <div className="grid gap-8 md:grid-cols-2">
           <Bullets
             points={[
-              "Helped design a new 3 dB hybrid coupler, using thermal FEA to maximize both thermal and RF performance at once.",
-              "The work sat at the intersection of mechanical and electrical: heat paths and RF behavior had to be optimized together, not in isolation.",
+              "My main project during my Co-Op was helping to design a new 3 dB hybrid coupler. I was responsible for the geometry and material choice which were tested using thermal simulations.", 
+              "First part of the thermal simulation was creating the thermal path to see how heat will transfer move through the material layers.",
+              "Second was first hand calculations of heat transfer to get desired cross sectional area, thermal conductivity coefficient, and material thickness.",
+              "After all of target values were obtained, they were put into SolidWorks FEA thermal simulation to then verify if the part can handle the projected heat of the system it will be placed in."
             ]}
           />
           {/* PHOTO SLOT — a simulation render or hardware shot (mind any confidentiality limits).
               Add /public/ttm-fea.jpg and swap for an <img>. */}
-          <PhotoSlot label="/ttm-fea.jpg" className="aspect-[4/3] w-100" />
+        <img src="FEA.jpg" alt="XingerPart" className="aspect-[4/3] w-full rounded-lg object-contain" />
         </div>
       </Block>
 
@@ -44,12 +46,13 @@ export default function Page() {
         <div className="grid gap-10 md:grid-cols-2">
         <Bullets
           points={[
-            "Built a MATLAB GUI that uses shape recognition to automatically flag defective vias.",
-            "It processes folders of 200+ images at a time, replacing a manual inspection step.",
-            "The tool saved engineers 100+ hours of quality work.",
+            "Built a graphic user interface in MATLAB that uses shape recognition and machine learning to detect cracks in vias. The defected vias are then sorted in a folder.",
+            "Has the ability to process folders with 200+ images at a time helping to replace a long and tedious manual inspection.",
+            "The GUI saved engineers a projected 100+ hours of quality work.",
+            "300+ lines of code that I coded without any prior knowledge of image processing."
           ]}
         />
-          <PhotoSlot label="/ttm-fea.jpg" className="aspect-[4/3] w-100" />
+        <img src="crackdetection.jpg" alt="MATLABGUI" className="aspect-[4/3] w-full rounded-lg object-contain" />
         </div>
       </Block>
 
@@ -59,10 +62,10 @@ export default function Page() {
           points={[
             "Designed & fabricated an aluminum structure in less than a week to both improve precision and protect RF engineers from 140 Celsius hot plate while taking resistance measurements of coupons holding RF components. ",
             "T slot 4040 aluminum linear rails were fabricated using a benchtop bandsaw to 8.25 inches. Cover was 3D printed using Ultimaker 4S. Connectors were attached to rails using roll-in t nut with screws, so height of structure is adjustable.",
-            "The tool saved engineers 100+ hours of quality work.",
+            "This structure now allows RF engineers to safely conduct hot plate test as well as improving precision due to it now being at a safe distance and giving RF engineers the ability to rest their hands on the cover.",
           ]}
         />
-          <PhotoSlot label="/ttm-fea.jpg" className="aspect-[4/3] w-100" />
+          <img src="fabricated8020.jpg" alt="8020structure" className="aspect-[4/4] w-full rounded-lg object-contain" />
         </div>
       </Block>
 

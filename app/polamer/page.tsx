@@ -37,9 +37,23 @@ export default function Page() {
               "8 Machines Done: Doosan PUMA V550 L/R, Hyundai LV800R, Hyundai LV1100R, Doosan Puma VTR 1216, Doosan Puma VTS 1214, Mazak Megaturn 900, and the Mazak Megaturn 1600",
             ]}
           />
-          {/* PHOTO SLOT — a part, toolpath, or machine (mind confidentiality).
-              Add /public/polamer-cam.jpg and swap for an <img>. */}
-          <PhotoSlot label="/polamer-cam.jpg" className="aspect-[4/3] w-full" />
+          <video
+          src="VTS1214.mp4"
+          autoPlay muted loop playsInline
+          className="aspect-[4/4] w-full rounded-lg border border-zinc-800 object-cover"
+          />
+        </div>
+      </Block>
+
+      <Block title="Computer Aided Manufacturing (CAM)">
+        <div className="grid gap-8 md:grid-cols-2">
+          <Bullets
+            points={[
+            "Programmed complex CAM toolpaths using MasterCAM for engine components in both turning and milling.",
+            "Operated 5 Axis & VTL machines to create standard operating proceduce for specific parts.",
+            "Helped write g-code probing macro program to automate probing to improve precision, repeatability, and runtime.",
+            ]}
+        />
         </div>
       </Block>
 

@@ -39,34 +39,39 @@ export default function Page() {
             ]}
           />
           {/* PHOTO SLOT — the accumulator / enclosure. Add /public/fsae-enclosure.jpg and swap for an <img>. */}
-          <PhotoSlot label="/fsae-enclosure.jpg" className="aspect-[4/3] w-full" />
+          <iframe
+          src="ISP.pdf"
+          className="aspect-[4/4] w-full rounded-lg border border-zinc-800"
+          title="FSAE report"
+/>
         </div>
       </Block>
 
       <Block title="EV27's advanced suspension system">
         <div className="grid gap-8 md:grid-cols-2">
+        <img src="suspension.png" alt="Layout" className="aspect-[4/3] w-full rounded-lg object-cover" />
         <Bullets
           points={[
             "Given my background in vehicle engineering, I was tasked to create the optimal suspension layout for a push/pull configured high performance suspension. While also building the suspension and integrating it onto the racecar.",
             "Designed the suspension layout in OptimumKinematics, using techniques such as optimization and hand calculations to get the suspension layout to meet target motion ratio, roll/pitch gradient, and heave motions.",
-            "Currently developing a torque-vectoring controller based around yaw-rate tracking to maximize handling in high speed corners.",
-            "Currently designing suspension components such as uprights, rockers, and a-arms in SolidWorks."
+            "Simulate layout in optimumdynamics to get desired spring rate as well as predicate handling behavior.", 
+            "Currently designing suspension components such as uprights, rockers, and a-arms in SolidWorks.",
           ]}
         />
-        <PhotoSlot label="/fsae-enclosure.jpg" className="aspect-[4/3] w-full" />
         </div>
       </Block>
 
-      <Block title="Pedal box">
+      <Block title="Chief Engineer of 150 HP Combustion Racecar">
         <div className="grid gap-8 md:grid-cols-2">
           {/* PHOTO SLOT — the machined pedal box. Add /public/fsae-pedalbox.jpg and swap for an <img>. */}
-          <PhotoSlot label="/fsae-pedalbox.jpg" className="aspect-[4/3] w-full" />
           <Bullets
             points={[
-              "Designed and manufactured a pedal box that improved throttle-map fidelity by 10%.",
-              "Owned the full pipeline end to end: 3D design, CAM, and machining.",
+              "Led the revival of our 2019 competition car. Vehicle could start with starter fluid but could not hold idle.",
+              "Using Haltech Nexus NSP, I steady state tuned the WR450F motor inside of the vehicle to near 100% volumetric efficiency using stoichiometric ratio of 14.7:1.",
+              "Rebuilt the wiring harness to connect to the Haltech Elite 1500 ECU."
             ]}
           />
+          <img src="marg.jpeg" alt="marg" className="aspect-[4/3] w-full rounded-lg object-cover" />
         </div>
       </Block>
 
@@ -86,7 +91,7 @@ export default function Page() {
 
       <Block title="Gallery">
         {/* Add files to /public and swap these placeholders for <img> tags. */}
-        <Gallery slots={["/fsae-car.jpg", "/fsae-shop.jpg", "/fsae-team.jpg"]} />
+        <Gallery slots={["meinmarg.jpeg", "ev1.jpeg", "max.jpeg"]} />
       </Block>
     </CaseStudyLayout>
   );

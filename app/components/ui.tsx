@@ -55,7 +55,12 @@ export function Gallery({ slots }: { slots: string[] }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {slots.map((s) => (
-        <PhotoSlot key={s} label={s} className="aspect-[4/3] w-full" />
+        <img
+          key={s}
+          src={s}
+          alt=""
+          className="aspect-[4/3] w-full rounded-lg border border-zinc-800 object-cover"
+        />
       ))}
     </div>
   );
