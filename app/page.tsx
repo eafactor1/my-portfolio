@@ -105,7 +105,7 @@ export default function Page() {
               Elijah Akpan
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-zinc-400">
-              <span className="text-zinc-200">Skilled mechanical engineering student at WPI with experience building high-performance systems ranging from jets engines to radical racecars.</span>
+              <span className="text-zinc-200">Innovative mechanical engineering student at WPI with experience building high-performance systems ranging from jets engines to radical racecars.</span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3 font-mono text-xs">
               <a
