@@ -38,12 +38,22 @@ export default function Page() {
               "Bus bar charging, NDR power supply, and a PCB was implemented into the protection box to allow safe charging of segments while in the box.",
             ]}
           />
-          {/* PHOTO SLOT — the accumulator / enclosure. Add /public/fsae-enclosure.jpg and swap for an <img>. */}
-          <iframe
-          src="ISP.pdf"
-          className="aspect-[4/4] w-full rounded-lg border border-zinc-800"
-          title="FSAE report"
-/>
+          <a
+            href="/ISP.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block self-start rounded-lg border border-zinc-800 transition-colors hover:border-[#ff5a1f]"
+          >
+            <iframe
+              src="/ISP.pdf#toolbar=0&view=FitH"
+              title="FSAE report preview"
+              className="pointer-events-none aspect-[4/3] w-full rounded-t-lg"
+            />
+            <div className="flex items-center justify-between px-4 py-3 font-mono text-xs uppercase tracking-widest text-zinc-300 group-hover:text-[#ff5a1f]">
+              <span>View full report</span>
+              <span>PDF ↗</span>
+            </div>
+          </a>
         </div>
       </Block>
 

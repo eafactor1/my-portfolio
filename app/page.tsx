@@ -39,7 +39,7 @@ const experience = [
       "Design and manufacture components for an autonomous vehicle laboratory that specializes in off-road vehicles.",
     ],
   },
-  {
+  { 
     org: "WPI — Washburn Labs",
     href: null,
     loc: "Worcester, MA",
