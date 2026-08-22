@@ -91,7 +91,7 @@ export default function Page() {
             href="Resume V2.pdf"
             className="rounded-md border border-zinc-700 px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-zinc-200 transition-colors hover:border-[#ff5a1f] hover:text-[#ff5a1f]"
           >
-            Résumé
+            Resume
           </a>
         </nav>
       </header>
