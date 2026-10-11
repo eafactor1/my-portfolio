@@ -57,31 +57,43 @@ export default function Page() {
         </div>
       </Block>
 
-      <Block title="EV27's advanced suspension system">
+      <Block title="EV27's suspension system">
         <div className="grid gap-8 md:grid-cols-2">
-        <img src="suspension.png" alt="Layout" className="aspect-[4/3] w-full rounded-lg object-cover" />
-        <Bullets
-          points={[
-            "Given my background in vehicle engineering, I was tasked to create the optimal suspension layout for a push/pull configured high performance suspension. While also building the suspension and integrating it onto the racecar.",
-            "Designed the suspension layout in OptimumKinematics, using techniques such as optimization and hand calculations to get the suspension layout to meet target motion ratio, roll/pitch gradient, and heave motions.",
-            "Simulate layout in optimumdynamics to get desired spring rate as well as predicate handling behavior.", 
-            "Currently designing suspension components such as uprights, rockers, and a-arms in SolidWorks.",
-          ]}
-        />
+          <Bullets
+            points={[
+              "Given my background in vehicle engineering, I was tasked to create the optimal suspension layout for a push/pull configured high performance suspension for the new racecar my team is building.",
+              "Designed the suspension layout in OptimumKinematics, using techniques such as optimization and hand calculations to get the suspension layout to meet target motion ratio, roll/pitch gradient, and heave motions.",
+              "Currently designing suspension components such as uprights, rockers, and a-arms in SolidWorks.",
+              "Upright and control arm designs are done with FEA currently being ran on them to ensure factor of safety target of 2 is met.",
+            ]}
+          />
+          <a
+            href="/suspensionisp.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block self-start rounded-lg border border-zinc-800 transition-colors hover:border-[#ff5a1f]"
+          >
+            <iframe
+              src="/suspensionisp.pdf#toolbar=0&view=FitH"
+              title="FSAE suspension report"
+              className="pointer-events-none aspect-[4/3] w-full rounded-t-lg"
+            />
+            <div className="flex items-center justify-between px-4 py-3 font-mono text-xs uppercase tracking-widest text-zinc-300 group-hover:text-[#ff5a1f]">
+              <span>View full report</span>
+              <span>PDF ↗</span>
+            </div>
+          </a>
         </div>
       </Block>
 
-      <Block title="Chief Engineer of 150 HP Combustion Racecar">
+      <Block title="Torque Vectoring Controller and Vi-grade Simulation">
         <div className="grid gap-8 md:grid-cols-2">
-          {/* PHOTO SLOT — the machined pedal box. Add /public/fsae-pedalbox.jpg and swap for an <img>. */}
           <Bullets
             points={[
-              "Led the revival of our 2019 competition car. Vehicle could start with starter fluid but could not hold idle.",
-              "Using Haltech Nexus NSP, I steady state tuned the WR450F motor inside of the vehicle to near 100% volumetric efficiency using stoichiometric ratio of 14.7:1.",
-              "Rebuilt the wiring harness to connect to the Haltech Elite 1500 ECU."
+              "Pending",
             ]}
           />
-          <img src="marg.jpeg" alt="marg" className="aspect-[4/3] w-full rounded-lg object-cover" />
+          <img src="vigrade.png" alt="vigrade" className="aspect-[4.5/3] w-full rounded-lg object-full" />
         </div>
       </Block>
 
